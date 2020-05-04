@@ -42,7 +42,7 @@ public class MeetingAlgorithm {
         LocalTime tempMeetingStart =  meetings.get(0).getStart();
         LocalTime tempMeetingEnd = meetings.get(0).getEnd();
         for (int i = 1; i < meetings.size(); i++) {
-            
+
             if( (meetings.get(i).getStart().compareTo(tempMeetingStart) >= 0) &&
                     (meetings.get(i).getStart().compareTo(tempMeetingEnd) <= 0)) {
 
